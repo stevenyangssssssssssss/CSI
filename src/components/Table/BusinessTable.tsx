@@ -171,7 +171,6 @@ export default () => {
         },
       }}
       form={{
-        // 由于配置了 transform，提交的参数与定义的不同这里需要转化一下
         syncToUrl: (values, type) => {
           if (type === 'get') {
             return {
@@ -183,11 +182,11 @@ export default () => {
         },
       }}
       pagination={{
-        pageSize: 5,
+        pageSize: 10,
         onChange: (page) => console.log(page),
       }}
       dateFormatter="string"
-      headerTitle={`${'Nick Lee (nicholaslee) CVP, MS Maps & Local'} 下所有数据`}
+      headerTitle={`Detailed data of ${'Nick Lee'}`}
     />
   );
 };

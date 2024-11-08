@@ -43,6 +43,10 @@ const EChartsTreemap = (props: any) => {
     ];
   };
 
+  const resizeChart = () => {
+    chartRef?.resize();
+  };
+
   const treemapOption = {
     tooltip: {
       trigger: 'item',
@@ -126,8 +130,11 @@ const EChartsTreemap = (props: any) => {
 
     setData(current);
     // 清理 chart 实例
+
+    window.addEventListener('resize', resizeChart);
     return () => {
       chartRef.dispose();
+      window.removeEventListener('resize', resizeChart);
     };
   }, []);
 
@@ -140,7 +147,6 @@ const EChartsTreemap = (props: any) => {
     );
     console.log(chartRef);
     chartRef.resize();
-
   }, [data, type, mapTreeSplit]);
 
   return <div id="treemap" style={{ width: '100%', height: '600px' }}></div>;

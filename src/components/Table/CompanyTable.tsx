@@ -39,11 +39,13 @@ const columns: ProColumns<GithubIssueItem>[] = [
     title: 'PO Amount ($)',
     dataIndex: 'POAmount',
     ellipsis: true,
+    sorter: true,
   },
   {
     title: 'HC',
     dataIndex: 'HC',
     ellipsis: true,
+    sorter: true,
   },
 ];
 
@@ -55,6 +57,8 @@ export default () => {
       actionRef={actionRef}
       size="small"
       request={async () => {
+        await waitTime(1000);
+
         return {
           data: [
             {
@@ -100,11 +104,91 @@ export default () => {
               POAmount: 100000,
               HC: 100000,
             },
-            {},
+
+            {
+              id: 8,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
+            {
+              id: 9,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
+            {
+              id: 10,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
+
+            {
+              id: 11,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
+            {
+              id: 12,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
+
+            {
+              id: 13,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
+
+            {
+              id: 14,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
+
+            {
+              id: 15,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
+
+            {
+              id: 16,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
+
+            {
+              id: 17,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
+
+            {
+              id: 18,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
+
+            {
+              id: 19,
+              Company: 'CSI',
+              POAmount: 100000,
+              HC: 100000,
+            },
           ],
         };
       }}
-      scroll={{ y: 'calc(600px - 50px)' }}
+      scroll={{ y: 'calc(600px - 90px)' }}
       editable={{
         type: 'multiple',
       }}
@@ -134,7 +218,7 @@ export default () => {
         },
       }}
       pagination={{
-        pageSize: 5,
+        pageSize: 20,
         onChange: (page) => console.log(page),
       }}
       dateFormatter="string"

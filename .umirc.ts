@@ -7,7 +7,7 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: {
-    title: '@umijs/max',
+    title: 'CSI',
   },
   routes: [
     {
@@ -15,21 +15,13 @@ export default defineConfig({
       redirect: '/home',
     },
     {
-      name: '首页',
+      name: 'Dashboard',
       path: '/home',
       component: './Home',
     },
-    {
-      name: '权限演示',
-      path: '/access',
-      component: './Access',
-    },
-    {
-      name: ' CRUD 示例',
-      path: '/table',
-      component: './Table',
-    },
   ],
+  locale: {
+    default: 'en-US',
+  },
   npmClient: 'npm',
 });
-

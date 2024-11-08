@@ -6,7 +6,9 @@ const EBarChart: React.FC = () => {
 
   useEffect(() => {
     chartRef = echarts.init(document.getElementById('bar-chart'));
-
+    const resizeChart = () => {
+      chartRef?.resize();
+    };
     const series = [
       {
         data: [120, 200, 150, 80, 70, 110, 130],
@@ -83,9 +85,11 @@ const EBarChart: React.FC = () => {
     // 使用配置项
     chartRef.setOption(option);
 
+    window.addEventListener('resize', resizeChart);
     // 清理 chart 实例
     return () => {
       chartRef.dispose();
+      window.removeEventListener('resize', resizeChart);
     };
   }, []);
 

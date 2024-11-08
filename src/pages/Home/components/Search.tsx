@@ -1,8 +1,6 @@
 import {
   ProForm,
-  ProFormDateRangePicker,
   ProFormInstance,
-  ProFormMoney,
   ProFormSelect,
 } from '@ant-design/pro-components';
 import { Drawer, message } from 'antd';
@@ -18,7 +16,7 @@ const Search = (props: any) => {
     }>
   >();
   return (
-    <Drawer title="Basic Drawer" onClose={onClose} open={open}>
+    <Drawer title="Search" onClose={onClose} open={open}>
       <ProForm<{
         name: string;
         company?: string;
@@ -52,44 +50,9 @@ const Search = (props: any) => {
               label: 'Dvir Horovitz',
             },
           ]}
-          placeholder="请输入名称"
+          placeholder="Please input name."
           name="name"
-          label="客户名称"
-        />
-
-        <ProFormDateRangePicker name="time" label="财年时间" />
-
-        <ProFormSelect
-          mode="multiple"
-          options={[
-            {
-              value: 'CSI',
-              label: 'CSI',
-            },
-            {
-              value: 'HCL',
-              label: 'HCL',
-            },
-            {
-              value: 'Websters',
-              label: 'Websters',
-            },
-            {
-              value: 'Accenture',
-              label: 'Accenture',
-            },
-          ]}
-          name="useMode"
-          label="供应商"
-        />
-
-        <ProFormMoney
-          width="md"
-          name="money"
-          label="PO"
-          fieldProps={{
-            numberPopoverRender: true,
-          }}
+          label="Name"
         />
       </ProForm>
     </Drawer>
