@@ -1,6 +1,7 @@
 import type { ActionType, ProColumns } from '@ant-design/pro-components';
 import { ProTable } from '@ant-design/pro-components';
 import { useRef } from 'react';
+import request from 'umi-request';
 export const waitTimePromise = async (time: number = 100) => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -56,137 +57,14 @@ export default () => {
       columns={columns}
       actionRef={actionRef}
       size="small"
-      request={async () => {
+      request={async (params, sort, filter) => {
+        console.log(sort, filter);
         await waitTime(1000);
-
-        return {
-          data: [
-            {
-              id: 1,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-            {
-              id: 2,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-            {
-              id: 3,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-            {
-              id: 4,
-              Company: 'CSI',
-              POAmount: 100000,
-
-              HC: 100000,
-            },
-            {
-              id: 5,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-            {
-              id: 6,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-            {
-              id: 7,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-
-            {
-              id: 8,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-            {
-              id: 9,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-            {
-              id: 10,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-
-            {
-              id: 11,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-            {
-              id: 12,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-
-            {
-              id: 13,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-
-            {
-              id: 14,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-
-            {
-              id: 15,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-
-            {
-              id: 16,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-
-            {
-              id: 17,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-
-            {
-              id: 18,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-
-            {
-              id: 19,
-              Company: 'CSI',
-              POAmount: 100000,
-              HC: 100000,
-            },
-          ],
-        };
+        return request<{
+          data: GithubIssueItem[];
+        }>('https://proapi.azurewebsites.net/github/issues', {
+          params,
+        });
       }}
       scroll={{ y: 'calc(600px - 90px)' }}
       editable={{
