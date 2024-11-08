@@ -1,0 +1,305 @@
+{
+  "name": "Nick Lee",
+  "size": 100,
+  "value": 100,
+  "children": [
+    {
+      "name": "Anurag Sharma",
+      "size": 30,
+      "value": 18,
+      "children": [
+        {
+          "name": "CSI",
+          "size": 10,
+          "value": 6
+        },
+        {
+          "name": "Websters",
+          "size": 5,
+          "value": 2
+        },
+        {
+          "name": "Accenture",
+          "size": 5,
+          "value": 3
+        },
+        {
+          "name": "HCL",
+          "size": 20,
+          "value": 7
+        }
+      ]
+    },
+    {
+      "name": "Cheryl Blair",
+      "size": 30,
+      "value": 35,
+      "children": [
+        {
+          "name": "CSI",
+          "size": 10,
+          "value": 12
+        },
+        {
+          "name": "Websters",
+          "size": 5,
+          "value": 4
+        },
+        {
+          "name": "Accenture",
+          "size": 5,
+          "value": 5
+        },
+        {
+          "name": "HCL",
+          "size": 20,
+          "value": 14
+        }
+      ]
+    },
+    {
+      "name": "Den Raskovalov",
+      "size": 30,
+      "value": 28,
+      "children": [
+        {
+          "name": "CSI",
+          "size": 10,
+          "value": 9
+        },
+        {
+          "name": "Websters",
+          "size": 5,
+          "value": 5
+        },
+        {
+          "name": "Accenture",
+          "size": 5,
+          "value": 6
+        },
+        {
+          "name": "HCL",
+          "size": 20,
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "Dvir Horovitz",
+      "size": 30,
+      "value": 22,
+      "children": [
+        {
+          "name": "CSI",
+          "size": 10,
+          "value": 5
+        },
+        {
+          "name": "Websters",
+          "size": 5,
+          "value": 3
+        },
+        {
+          "name": "Accenture",
+          "size": 5,
+          "value": 4
+        },
+        {
+          "name": "HCL",
+          "size": 20,
+          "value": 10
+        }
+      ]
+    },
+    {
+      "name": "Loren Hillberg",
+      "size": 30,
+      "value": 14,
+      "children": [
+        {
+          "name": "CSI",
+          "size": 10,
+          "value": 4
+        },
+        {
+          "name": "Websters",
+          "size": 5,
+          "value": 2
+        },
+        {
+          "name": "Accenture",
+          "size": 5,
+          "value": 3
+        },
+        {
+          "name": "HCL",
+          "size": 20,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Peiwei Cao",
+      "size": 30,
+      "value": 25,
+      "children": [
+        {
+          "name": "CSI",
+          "size": 10,
+          "value": 8
+        },
+        {
+          "name": "Websters",
+          "size": 5,
+          "value": 5
+        },
+        {
+          "name": "Accenture",
+          "size": 5,
+          "value": 5
+        },
+        {
+          "name": "HCL",
+          "size": 20,
+          "value": 7
+        }
+      ]
+    },
+    {
+      "name": "Ryan Perterson",
+      "size": 30,
+      "value": 28,
+      "children": [
+        {
+          "name": "CSI",
+          "size": 10,
+          "value": 10,
+          "color": "red"
+        },
+        {
+          "name": "Websters",
+          "size": 5,
+          "value": 4
+        },
+        {
+          "name": "Accenture",
+          "size": 5,
+          "value": 5
+        },
+        {
+          "name": "HCL",
+          "size": 20,
+          "value": 9
+        }
+      ]
+    },
+    {
+      "name": "Oscar Lee",
+      "size": 30,
+      "value": 16,
+      "children": [
+        {
+          "name": "CSI",
+          "size": 10,
+          "value": 4
+        },
+        {
+          "name": "Websters",
+          "size": 5,
+          "value": 2
+        },
+        {
+          "name": "Accenture",
+          "size": 5,
+          "value": 3
+        },
+        {
+          "name": "HCL",
+          "size": 20,
+          "value": 7
+        }
+      ]
+    },
+    {
+      "name": "Emily Lee",
+      "size": 30,
+      "value": 26,
+      "children": [
+        {
+          "name": "CSI",
+          "size": 10,
+          "value": 7
+        },
+        {
+          "name": "Websters",
+          "size": 5,
+          "value": 5
+        },
+        {
+          "name": "Accenture",
+          "size": 5,
+          "value": 4
+        },
+        {
+          "name": "HCL",
+          "size": 20,
+          "value": 10
+        }
+      ]
+    },
+    {
+      "name": "Wei Wu",
+      "size": 30,
+      "value": 21,
+      "children": [
+        {
+          "name": "CSI",
+          "size": 10,
+          "value": 5
+        },
+        {
+          "name": "Websters",
+          "size": 5,
+          "value": 3
+        },
+        {
+          "name": "Accenture",
+          "size": 5,
+          "value": 4
+        },
+        {
+          "name": "HCL",
+          "size": 20,
+          "value": 9
+        }
+      ]
+    },
+    {
+      "name": "Karen Guilbeault",
+      "size": 30,
+      "value": 24,
+      "children": [
+        {
+          "name": "CSI",
+          "size": 10,
+          "value": 6
+        },
+        {
+          "name": "Websters",
+          "size": 5,
+          "value": 4
+        },
+        {
+          "name": "Accenture",
+          "size": 5,
+          "value": 5
+        },
+        {
+          "name": "HCL",
+          "size": 20,
+          "value": 9
+        }
+      ]
+    }
+  ]
+}
