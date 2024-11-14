@@ -1,9 +1,7 @@
 import type { ActionType, ProColumns } from '@ant-design/pro-components';
 import { ProTable } from '@ant-design/pro-components';
-import { useModel } from '@umijs/max';
-import { Input } from 'antd';
 import { useRef } from 'react';
-
+import request from 'umi-request';
 export const waitTimePromise = async (time: number = 100) => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -32,46 +30,10 @@ type GithubIssueItem = {
   closed_at?: string;
 };
 
-// L1	L2	L3	L4	HC	PO#	Start	End	 PO Amount 	Company	Project Type	Location	Max End Date	PO Owner	Creator/Assigned To	Nature of Work
 const columns: ProColumns<GithubIssueItem>[] = [
   {
-    title: 'L1',
-    dataIndex: 'L1',
-    ellipsis: true,
-  },
-  {
-    title: 'L2',
-    dataIndex: 'L2',
-    ellipsis: true,
-  },
-  {
-    title: 'L3',
-    dataIndex: 'L3',
-    ellipsis: true,
-  },
-  {
-    title: 'L4',
-    dataIndex: 'L4',
-    ellipsis: true,
-  },
-  {
-    title: 'HC',
-    dataIndex: 'HC',
-    ellipsis: true,
-  },
-  {
-    title: 'PO#',
-    dataIndex: 'PO#',
-    ellipsis: true,
-  },
-  {
-    title: 'Start',
-    dataIndex: 'Start',
-    ellipsis: true,
-  },
-  {
-    title: 'End',
-    dataIndex: 'End',
+    title: 'Department',
+    dataIndex: 'Department',
     ellipsis: true,
   },
   {
@@ -80,71 +42,68 @@ const columns: ProColumns<GithubIssueItem>[] = [
     ellipsis: true,
   },
   {
-    title: 'Company',
-    dataIndex: 'Company',
+    title: 'Total-HC',
+    dataIndex: 'Total-HC',
     ellipsis: true,
   },
   {
-    title: 'Project Type',
-    dataIndex: 'Project Type',
+    title: 'FTE-HC',
+    dataIndex: 'FTE-HC',
     ellipsis: true,
   },
   {
-    title: 'Location',
-    dataIndex: 'Location',
+    title: 'Vendors-HC',
+    dataIndex: 'Vendors-HC',
     ellipsis: true,
   },
   {
-    title: 'Max End Date',
-    dataIndex: 'Max End Date',
-    ellipsis: true,
-  },
-
-  {
-    title: 'PO Owner',
-    dataIndex: 'PO Owner',
+    title: 'Top5 Vendors-Name',
+    dataIndex: 'Top5 Vendors-Name',
     ellipsis: true,
   },
   {
-    title: 'Creator/Assigned To',
-    dataIndex: 'Creator/Assigned To',
+    title: 'Top5 Vendors-HC',
+    dataIndex: 'Top5 Vendors-HC',
     ellipsis: true,
   },
   {
-    title: 'Nature of Work',
-    dataIndex: 'Nature of Work',
+    title: 'HC-Ratio',
+    dataIndex: 'HC-Ratio',
     ellipsis: true,
   },
   {
-    title: 'Commit',
-    dataIndex: 'Commit',
-
-    render: (_, record) => {
-      return <Input.TextArea placeholder="please input some commit." />;
-    },
+    title: 'Top5 Amount',
+    dataIndex: 'Top5 Amount',
+    ellipsis: true,
+  },
+  {
+    title: 'Top5 Amount-Ratio',
+    dataIndex: 'Top5 Amount-Ratio',
+    ellipsis: true,
   },
 ];
 
 export default () => {
   const actionRef = useRef<ActionType>();
-
-  const { useData } = useModel('userData');
   return (
     <ProTable<GithubIssueItem>
       columns={columns}
       actionRef={actionRef}
-      cardBordered
+      size="small"
       request={async (params, sort, filter) => {
         console.log(sort, filter);
-        await waitTime(2000);
-        return {
-          data: useData,
-        };
+        await waitTime(1000);
+        return request<{
+          data: GithubIssueItem[];
+        }>('https://proapi.azurewebsites.net/github/issues', {
+          params,
+        });
       }}
+      scroll={{ y: 'calc(600px - 123px)' }}
       editable={{
         type: 'multiple',
       }}
-      bordered
+      bordered={false}
       columnsState={{
         persistenceKey: 'pro-table-singe-demos',
         persistenceType: 'localStorage',
@@ -156,14 +115,8 @@ export default () => {
         },
       }}
       rowKey="id"
-      search={{
-        labelWidth: 'auto',
-      }}
-      options={{
-        setting: {
-          listsHeight: 400,
-        },
-      }}
+      search={false}
+      options={false}
       form={{
         syncToUrl: (values, type) => {
           if (type === 'get') {
@@ -176,11 +129,11 @@ export default () => {
         },
       }}
       pagination={{
-        pageSize: 10,
+        pageSize: 20,
         onChange: (page) => console.log(page),
       }}
       dateFormatter="string"
-      headerTitle={`Detailed data of ${'Nick Lee'}`}
+      headerTitle={false}
     />
   );
 };

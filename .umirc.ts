@@ -12,12 +12,16 @@ export default defineConfig({
   routes: [
     {
       path: '/',
-      redirect: '/home',
+      redirect: '/access',
     },
     {
-      name: 'Dashboard',
-      path: '/home',
+      path: '/access/:id',
       component: './Home',
+    },
+    {
+      name: 'Organization',
+      path: '/access',
+      component: './Access',
     },
   ],
   locale: {

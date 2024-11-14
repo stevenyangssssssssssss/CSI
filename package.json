@@ -15,7 +15,9 @@
     "@ant-design/pro-components": "^2.4.4",
     "@umijs/max": "^4.3.31",
     "antd": "^5.4.0",
+    "dicebear": "^9.2.2",
     "echarts": "^5.5.1",
+    "primereact": "^10.8.4",
     "umi-request": "^1.4.0"
   },
   "devDependencies": {

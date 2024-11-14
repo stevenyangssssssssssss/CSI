@@ -72,7 +72,7 @@ const EChartsTreemap = (props: any) => {
         breadcrumb: {
           show: false,
         },
-        name: 'Disk Usage',
+        name: 'Rate of PO Amount',
         visibleMin: 300,
         itemStyle: {
           borderColor: '#fff',

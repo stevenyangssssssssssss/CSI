@@ -32,6 +32,11 @@ type GithubIssueItem = {
 
 const columns: ProColumns<GithubIssueItem>[] = [
   {
+    dataIndex: 'index',
+    valueType: 'indexBorder',
+    width: 48,
+  },
+  {
     title: 'Company',
     dataIndex: 'Company',
     ellipsis: true,

@@ -1,0 +1,324 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "position": "CVP",
+      "department": "MS Maps & Local",
+      "name": "Nick Lee",
+      "children": [
+        {
+          "id": 2,
+          "position": "Partner Group Eng Manager",
+          "department": "MS Maps & Local",
+          "name": "Anurag Sharma",
+          "children": [
+            {
+              "id": 3,
+              "position": "Principal Software Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "Grayson Myers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "position": "Executive Business Admin",
+          "department": "MS Maps & Local",
+          "name": "Cheryl Blair",
+          "children": []
+        },
+        {
+          "id": 5,
+          "position": "Partner Group Eng Manager",
+          "department": "MS Maps & Local",
+          "name": "Den Raskovalov",
+          "children": [
+            {
+              "id": 6,
+              "position": "Principal Engineering Manager",
+              "department": "MS Maps & Local",
+              "name": "Midhun Ittycheriah",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "position": "General Manager",
+          "department": "Bing Local",
+          "name": "Dvir Horovitz",
+          "children": [
+            {
+              "id": 8,
+              "position": "Principal Group Eng Manager",
+              "department": "Bing Local",
+              "name": "Jyotkumar Patel",
+              "children": [
+                {
+                  "id": 9,
+                  "position": "Principal Software Engineer",
+                  "department": "Bing Local",
+                  "name": "Rajiv Binwade",
+                  "children": []
+                },
+                {
+                  "id": 10,
+                  "position": "Principal Software Eng Manager",
+                  "department": "MS Maps & Local",
+                  "name": "Hemant Goyal",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "position": "Principal Software Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "Kelly You",
+              "children": []
+            },
+            {
+              "id": 12,
+              "position": "Principal Software Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "Vladislav Mokeev",
+              "children": [
+                {
+                  "id": 13,
+                  "position": "Principal Software Engineer",
+                  "department": "MS Maps & Local",
+                  "name": "Dmitry Potash",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 14,
+              "position": "Principal Group Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "Chiping Tang",
+              "children": []
+            },
+            {
+              "id": 15,
+              "position": "Principal Group Program Manager",
+              "department": "MS Maps & Local",
+              "name": "Kate Ou",
+              "children": [
+                {
+                  "id": 16,
+                  "position": "Principal Program Manager Lead",
+                  "department": "MS Maps & Local",
+                  "name": "Sean King",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 17,
+              "position": "Principal Software Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "Srinivas Kanakapally",
+              "children": [
+                {
+                  "id": 18,
+                  "position": "Principal Software Eng Manager",
+                  "department": "MS Maps & Local",
+                  "name": "Nihal Naik",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "position": "Partner Group Program Manager",
+          "department": "MS Maps & Local",
+          "name": "Loren Hillberg",
+          "children": [
+            {
+              "id": 20,
+              "position": "Principal Program Manager Lead",
+              "department": "MS Maps & Local",
+              "name": "Cordell Jones",
+              "children": [
+                {
+                  "id": 21,
+                  "position": "Principal PM",
+                  "department": "MS Maps & Local",
+                  "name": "Ashley Song",
+                  "children": []
+                },
+                {
+                  "id": 22,
+                  "position": "Principal PM",
+                  "department": "MS Maps & Local",
+                  "name": "Ashley Averett",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 23,
+              "position": "Principal Program Manager Lead",
+              "department": "MS Maps & Local",
+              "name": "Mike Gilbert",
+              "children": [
+                {
+                  "id": 24,
+                  "position": "Principal Program Manager",
+                  "department": "MS Maps & Local",
+                  "name": "Harsh Govind",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 25,
+              "position": "Principal Program Manager Lead",
+              "department": "MS Maps & Local",
+              "name": "Karl Tolgu",
+              "children": [
+                {
+                  "id": 26,
+                  "position": "Principal PM",
+                  "department": "MS Maps & Local",
+                  "name": "Oswlado Ribas",
+                  "children": []
+                },
+                {
+                  "id": 27,
+                  "position": "Program Manager",
+                  "department": "MS Maps & Local",
+                  "name": "Connor Plante",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "position": "Principal Software Eng Manager",
+          "department": "MS Maps & Local",
+          "name": "Ming Tan",
+          "children": []
+        },
+        {
+          "id": 29,
+          "position": "Partner Group Eng Manager",
+          "department": "MS Maps & Local",
+          "name": "Peiwei Cao",
+          "children": [
+            {
+              "id": 30,
+              "position": "Principal Software Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "Leon Xu",
+              "children": []
+            },
+            {
+              "id": 31,
+              "position": "Principal Software Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "NagaVara Ghanta",
+              "children": []
+            },
+            {
+              "id": 32,
+              "position": "Principal Software Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "Vashutosh Agrawal",
+              "children": []
+            }
+          ]
+        },
+
+        {
+          "id": 33,
+          "position": "GM",
+          "department": "Azure Maps",
+          "name": "Ryan Perterson",
+          "children": [
+            {
+              "id": 34,
+              "position": "Principal PM Manager",
+              "department": "MS Maps & Local",
+              "name": "Johannes Kebeck",
+              "children": [
+                {
+                  "id": 35,
+                  "position": "Senior PM",
+                  "department": "MS Maps & Local",
+                  "name": "Justine Coates",
+                  "children": []
+                },
+                {
+                  "id": 36,
+                  "position": "Principal PM",
+                  "department": "MS Maps & Local",
+                  "name": "Erik Lindeman",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 37,
+              "position": "Principal Software Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "Senthil Palanisamy",
+              "children": []
+            },
+            {
+              "id": 38,
+              "position": "Group Manager Business Planning",
+              "department": "MS Maps & Local",
+              "name": "Fan Ye",
+              "children": []
+            }
+          ]
+        },
+
+        {
+          "id": 39,
+          "position": "Partner Group Eng Manager",
+          "department": "MS Maps & Local",
+          "name": "Wei Wu",
+          "children": [
+            {
+              "id": 40,
+              "position": "Principal Group Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "Chao Gao",
+              "children": []
+            },
+            {
+              "id": 41,
+              "position": "Principal Software Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "Jason Hong",
+              "children": []
+            },
+            {
+              "id": 42,
+              "position": "Principal Group Eng Manager",
+              "department": "MS Maps & Local",
+              "name": "Kumarswamy Valegerepura",
+              "children": []
+            }
+          ]
+        },
+
+        {
+          "id": 43,
+          "position": "Chief of Staff",
+          "department": "MS Maps & Local",
+          "name": "Karen Guilbeault",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
